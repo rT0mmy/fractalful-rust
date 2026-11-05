@@ -13,6 +13,8 @@ formulas from nodes, animate the camera, sync it to music, and export videos.
 - **Output**: HDR10 / scRGB display support, screenshots, MP4 or PNG-sequence
   export with motion blur
 
+![4](https://github.com/rT0mmy/fractalful-rust/blob/main/screenshots/screenshot_1793232964.png?raw=true)
+
 ## Download
 
 Grab the latest zip from [Releases](https://github.com/rT0mmy/fractalful-rust/releases),
@@ -81,6 +83,13 @@ PNG-sequence export works without it.
   videos go next to it). The last session restores automatically.
 - **Crashes:** details go to `%APPDATA%\fractalful\crash.log`. Deleting
   `%APPDATA%\fractalful\session.json` starts you fresh.
+
+## Screenshots
+
+![1](https://github.com/rT0mmy/fractalful-rust/blob/main/screenshots/screenshot_1793214856.png?raw=true)
+![2](https://github.com/rT0mmy/fractalful-rust/blob/main/screenshots/screenshot_1793224925.png?raw=true)
+![3](https://github.com/rT0mmy/fractalful-rust/blob/main/screenshots/screenshot_1793225070.png?raw=true)
+
 
 ## License
 
