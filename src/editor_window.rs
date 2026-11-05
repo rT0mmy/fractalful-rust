@@ -31,9 +31,10 @@ impl EditorWindow {
         device: &wgpu::Device,
     ) -> Result<Self, String> {
         let attrs = Window::default_attributes()
-            .with_title("fractalful — node editor")
+            .with_title("Fractalful — node editor")
             .with_inner_size(winit::dpi::LogicalSize::new(1100, 600));
-        let window = Arc::new(event_loop.create_window(attrs).map_err(|e| e.to_string())?);
+        let window = Arc::new(event_loop.create_window(crate::platform::with_mica(attrs)).map_err(|e| e.to_string())?);
+        crate::icon::apply(&window);
         let surface = instance.create_surface(window.clone()).map_err(|e| e.to_string())?;
         let caps = surface.get_capabilities(adapter);
         let format = caps.formats.iter().copied().find(|f| f.is_srgb()).unwrap_or(caps.formats[0]);

@@ -25,6 +25,19 @@ pub fn attach_parent_console() {
 #[cfg(not(windows))]
 pub fn attach_parent_console() {}
 
+/// Asks for the Windows 11 Mica backdrop. The client area is drawn opaque, so Mica
+/// shows on the title bar, tinted by the wallpaper and dark / light with the app
+/// theme. Earlier Windows versions ignore it.
+pub fn with_mica(attrs: egui_winit::winit::window::WindowAttributes) -> egui_winit::winit::window::WindowAttributes {
+    #[cfg(windows)]
+    {
+        use egui_winit::winit::platform::windows::{BackdropType, WindowAttributesExtWindows};
+        attrs.with_system_backdrop(BackdropType::MainWindow)
+    }
+    #[cfg(not(windows))]
+    attrs
+}
+
 /// Opens a file or folder with its default app.
 pub fn open(path: &std::path::Path) -> Result<(), String> {
     let program = if cfg!(windows) { "explorer" } else { "xdg-open" };

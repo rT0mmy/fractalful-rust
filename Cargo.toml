@@ -24,7 +24,11 @@ winit = "0.30"
 
 # Documents folder lookup and console attach (already in the tree via winit).
 [target.'cfg(windows)'.dependencies]
-windows-sys = { version = "0.61", features = ["Win32_UI_Shell", "Win32_System_Com", "Win32_System_Console"] }
+windows-sys = { version = "0.61", features = ["Win32_UI_Shell", "Win32_System_Com", "Win32_System_Console", "Win32_System_Registry"] }
+
+# build.rs turns src/assets into the exe's icon resource.
+[target.'cfg(windows)'.build-dependencies]
+image = { version = "0.25.10", default-features = false, features = ["png"] }
 
 [profile.release]
 lto = "thin"

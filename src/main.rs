@@ -8,6 +8,7 @@ mod display;
 mod editor_window;
 mod audio;
 mod graph;
+mod icon;
 mod images;
 mod modal;
 mod paths;
@@ -1246,8 +1247,8 @@ impl App {
         }
 
         let title = match self.project.name.as_str() {
-            "" => "fractalful".to_string(),
-            name => format!("{name} — fractalful"),
+            "" => "Fractalful".to_string(),
+            name => format!("{name} — Fractalful"),
         };
         if title != self.title {
             gpu.window.set_title(&title);
@@ -2144,7 +2145,7 @@ impl ApplicationHandler for App {
     fn resumed(&mut self, event_loop: &ActiveEventLoop) {
         if self.gpu.is_none() {
             let mut attrs = Window::default_attributes()
-                .with_title("fractalful")
+                .with_title("Fractalful")
                 .with_inner_size(winit::dpi::LogicalSize::new(1280, 800))
                 // Below this the panels no longer fit next to each other.
                 .with_min_inner_size(winit::dpi::LogicalSize::new(640, 400))
@@ -2152,7 +2153,9 @@ impl ApplicationHandler for App {
             if let Some([w, h]) = self.restore_window_size.filter(|s| s[0] >= 320 && s[1] >= 200) {
                 attrs = attrs.with_inner_size(winit::dpi::PhysicalSize::new(w, h));
             }
+            let attrs = platform::with_mica(attrs);
             let window = Arc::new(event_loop.create_window(attrs).expect("create window"));
+            icon::apply(&window);
             // A restored graph that no longer compiles falls back to the default one.
             let material = graph::codegen::generate(&self.doc.graphs.material);
             let world = graph::codegen::generate_world(&self.doc.graphs.world);
@@ -2200,6 +2203,9 @@ impl ApplicationHandler for App {
                 self.doc.detach_request = Some(false);
                 self.apply_detach_request(event_loop);
             } else if let Some(gpu) = &self.gpu {
+                if matches!(event, WindowEvent::ThemeChanged(_) | WindowEvent::ScaleFactorChanged { .. } | WindowEvent::Focused(true)) {
+                    icon::apply(&ew.window);
+                }
                 ew.on_event(&gpu.device, &event);
             }
             return;
@@ -2317,6 +2323,10 @@ impl ApplicationHandler for App {
             WindowEvent::Focused(false) => {
                 self.keys.clear();
                 self.set_looking(false);
+            }
+            // Focus too: switching only the taskbar's mode in Settings sends no ThemeChanged.
+            WindowEvent::ThemeChanged(_) | WindowEvent::ScaleFactorChanged { .. } | WindowEvent::Focused(true) => {
+                icon::apply(&gpu.window);
             }
             _ => {}
         }
