@@ -2,6 +2,9 @@
 name = "fractalful"
 version = "0.1.0"
 edition = "2024"
+description = "Real-time 3D fractal explorer with node-based formulas, animation and video export"
+repository = "https://github.com/rT0mmy/fractalful-rust"
+readme = "README.md"
 
 [dependencies]
 bytemuck = { version = "1.25.2", features = ["derive"] }
