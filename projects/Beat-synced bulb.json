@@ -1,0 +1,430 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": 0,
+        "kind": "IterStart",
+        "pos": [
+          -570.0,
+          -200.0
+        ],
+        "values": []
+      },
+      {
+        "id": 1,
+        "kind": "IterOutput",
+        "pos": [
+          881.0,
+          136.0
+        ],
+        "values": [
+          1010.0,
+          6.75,
+          1.0
+        ]
+      },
+      {
+        "id": 11,
+        "kind": "OrbitData",
+        "pos": [
+          -51.0,
+          437.0
+        ],
+        "values": []
+      },
+      {
+        "id": 12,
+        "kind": "CosinePalette",
+        "pos": [
+          251.0,
+          517.0
+        ],
+        "values": [
+          0.5,
+          0.0,
+          1.0,
+          0.22545457,
+          1.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          2.0,
+          0.32,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": 13,
+        "kind": "ColorOutput",
+        "pos": [
+          941.0,
+          370.0
+        ],
+        "values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          1.0,
+          0.34999996,
+          0.14999998,
+          1.0,
+          0.0,
+          0.9,
+          0.40000007,
+          0.30000004,
+          0.5
+        ]
+      },
+      {
+        "id": 19,
+        "kind": "Beat",
+        "pos": [
+          -1246.0,
+          675.0
+        ],
+        "values": [
+          0.0,
+          1.0,
+          0.3,
+          0.0
+        ]
+      },
+      {
+        "id": 25,
+        "kind": "Fresnel",
+        "pos": [
+          252.0,
+          411.0
+        ],
+        "values": [
+          1.0
+        ]
+      },
+      {
+        "id": 26,
+        "kind": "AudioLevel",
+        "pos": [
+          -574.0,
+          -123.0
+        ],
+        "values": [
+          0.0,
+          0.145,
+          0.32,
+          0.95
+        ]
+      },
+      {
+        "id": 33,
+        "kind": "AmazingSurf",
+        "pos": [
+          -10.0,
+          4.0
+        ],
+        "values": [
+          2.84,
+          0.0,
+          0.0,
+          3.0,
+          -0.92
+        ]
+      },
+      {
+        "id": 34,
+        "kind": "CombineXyz",
+        "pos": [
+          -80.0,
+          690.0
+        ],
+        "values": [
+          0.0,
+          0.23,
+          0.41
+        ]
+      },
+      {
+        "id": 35,
+        "kind": "Math",
+        "pos": [
+          -486.0,
+          447.0
+        ],
+        "values": [
+          2.0,
+          0.0,
+          -5.83
+        ]
+      },
+      {
+        "id": 42,
+        "kind": "AudioLevel",
+        "pos": [
+          -1163.0,
+          -99.0
+        ],
+        "values": [
+          1.0,
+          0.557,
+          0.69,
+          2.21
+        ]
+      },
+      {
+        "id": 43,
+        "kind": "Oscillator",
+        "pos": [
+          -735.0,
+          275.0
+        ],
+        "values": [
+          0.0,
+          0.39,
+          16.0,
+          8.0,
+          0.0
+        ]
+      },
+      {
+        "id": 44,
+        "kind": "Math",
+        "pos": [
+          -398.0,
+          163.0
+        ],
+        "values": [
+          0.0,
+          0.0,
+          1.62
+        ]
+      },
+      {
+        "id": 45,
+        "kind": "Math",
+        "pos": [
+          -1038.0,
+          369.0
+        ],
+        "values": [
+          2.0,
+          0.0,
+          0.15
+        ]
+      },
+      {
+        "id": 48,
+        "kind": "Beat",
+        "pos": [
+          -1209.0,
+          84.0
+        ],
+        "values": [
+          4.0,
+          1.0,
+          0.96,
+          0.0
+        ]
+      }
+    ],
+    "links": [
+      {
+        "from": 12,
+        "from_out": 0,
+        "to": 13,
+        "input": 4
+      },
+      {
+        "from": 25,
+        "from_out": 0,
+        "to": 13,
+        "input": 5
+      },
+      {
+        "from": 12,
+        "from_out": 0,
+        "to": 13,
+        "input": 0
+      },
+      {
+        "from": 0,
+        "from_out": 0,
+        "to": 33,
+        "input": 0
+      },
+      {
+        "from": 11,
+        "from_out": 0,
+        "to": 12,
+        "input": 0
+      },
+      {
+        "from": 34,
+        "from_out": 0,
+        "to": 12,
+        "input": 4
+      },
+      {
+        "from": 19,
+        "from_out": 0,
+        "to": 34,
+        "input": 0
+      },
+      {
+        "from": 19,
+        "from_out": 2,
+        "to": 34,
+        "input": 1
+      },
+      {
+        "from": 19,
+        "from_out": 3,
+        "to": 34,
+        "input": 2
+      },
+      {
+        "from": 19,
+        "from_out": 0,
+        "to": 12,
+        "input": 2
+      },
+      {
+        "from": 19,
+        "from_out": 0,
+        "to": 35,
+        "input": 1
+      },
+      {
+        "from": 33,
+        "from_out": 0,
+        "to": 1,
+        "input": 0
+      },
+      {
+        "from": 26,
+        "from_out": 0,
+        "to": 33,
+        "input": 4
+      },
+      {
+        "from": 35,
+        "from_out": 0,
+        "to": 33,
+        "input": 5
+      },
+      {
+        "from": 44,
+        "from_out": 0,
+        "to": 33,
+        "input": 1
+      },
+      {
+        "from": 42,
+        "from_out": 0,
+        "to": 44,
+        "input": 1
+      },
+      {
+        "from": 19,
+        "from_out": 2,
+        "to": 45,
+        "input": 1
+      },
+      {
+        "from": 45,
+        "from_out": 0,
+        "to": 43,
+        "input": 1
+      }
+    ],
+    "next_id": 49,
+    "camera_hint": null
+  },
+  "settings": {
+    "iterations": 5,
+    "max_steps": 512,
+    "detail": 8.0,
+    "render_scale": 1.0,
+    "dynamic_resolution": false,
+    "target_fps": 60.0,
+    "vsync": true,
+    "shadows": false,
+    "shadow_steps": 32,
+    "shadow_iterations": 6,
+    "shadow_softness": 8.0,
+    "ao_strength": 0.0,
+    "fog": 0.0,
+    "base_color": [
+      0.35000002,
+      0.45000002,
+      0.75
+    ],
+    "sky_top": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sky_bottom": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sky_solid": true,
+    "reflections": false,
+    "reflection_steps": 96,
+    "light_intensity": 0.0,
+    "bloom": {
+      "enabled": true,
+      "intensity": 4.0,
+      "threshold": 0.4,
+      "knee": 0.5,
+      "radius": 1.0
+    },
+    "light_yaw": 0.8,
+    "light_pitch": 0.7,
+    "accumulate": true,
+    "max_samples": 64,
+    "move_speed": 17.611101,
+    "look_sensitivity": 1.0,
+    "playing": true,
+    "time_speed": 1.0
+  },
+  "camera": {
+    "pos": [
+      0.0,
+      0.0,
+      -11.475
+    ],
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "fov_deg": 20.0
+  },
+  "anim_time": 103.877945,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "duration": 10.0,
+    "start": 0.0,
+    "samples": 32,
+    "shutter": 0.5,
+    "format": "H264",
+    "crf": 16,
+    "output": "fractalful_video",
+    "camera": "Current",
+    "orbit_turns": 1.0,
+    "include_audio": true
+  },
+  "keyframes": [],
+  "audio": {
+    "path": "C:\\Users\\Admin\\Downloads\\lsdj\\A Minor, 153 -.flac",
+    "offset": 0.0,
+    "volume": 0.15,
+    "muted": false,
+    "bpm": 153.0,
+    "sensitivity": 0.36
+  }
+}

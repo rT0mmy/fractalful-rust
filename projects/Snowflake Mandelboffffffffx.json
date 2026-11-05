@@ -1,0 +1,658 @@
+{
+  "graph": {
+    "nodes": [
+      {
+        "id": 0,
+        "kind": "IterStart",
+        "pos": [
+          -888.0,
+          134.0
+        ],
+        "values": []
+      },
+      {
+        "id": 1,
+        "kind": "IterOutput",
+        "pos": [
+          891.0,
+          219.0
+        ],
+        "values": [
+          4096.0,
+          64.0,
+          1.0
+        ]
+      },
+      {
+        "id": 2,
+        "kind": "Mandelbox",
+        "pos": [
+          -359.0,
+          60.0
+        ],
+        "values": [
+          -4.0,
+          0.0,
+          0.0,
+          0.35,
+          0.16
+        ]
+      },
+      {
+        "id": 3,
+        "kind": "Position",
+        "pos": [
+          -261.0,
+          -365.0
+        ],
+        "values": []
+      },
+      {
+        "id": 4,
+        "kind": "PolarRepeat",
+        "pos": [
+          189.0,
+          -312.0
+        ],
+        "values": [
+          4.2,
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "id": 5,
+        "kind": "DomainOutput",
+        "pos": [
+          1808.0,
+          -251.0
+        ],
+        "values": [
+          1000.0
+        ]
+      },
+      {
+        "id": 6,
+        "kind": "OrbitData",
+        "pos": [
+          -888.0,
+          201.0
+        ],
+        "values": []
+      },
+      {
+        "id": 7,
+        "kind": "CosinePalette",
+        "pos": [
+          -66.0,
+          320.0
+        ],
+        "values": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.39072818,
+          0.27899933,
+          0.14492464,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.87,
+          0.15
+        ]
+      },
+      {
+        "id": 8,
+        "kind": "ColorOutput",
+        "pos": [
+          891.0,
+          352.0
+        ],
+        "values": [
+          0.35000002,
+          0.45000002,
+          0.75,
+          0.89,
+          0.53,
+          0.5,
+          0.6,
+          0.85,
+          1.0,
+          0.0,
+          0.0,
+          0.9,
+          0.40000007,
+          0.30000004,
+          0.5
+        ]
+      },
+      {
+        "id": 12,
+        "kind": "Geometry",
+        "pos": [
+          -889.0,
+          360.0
+        ],
+        "values": []
+      },
+      {
+        "id": 13,
+        "kind": "VectorMath",
+        "pos": [
+          -456.0,
+          332.0
+        ],
+        "values": [
+          3.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.55
+        ]
+      },
+      {
+        "id": 15,
+        "kind": "HueSaturation",
+        "pos": [
+          196.0,
+          434.0
+        ],
+        "values": [
+          0.8,
+          0.30000004,
+          0.2,
+          0.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": 16,
+        "kind": "VectorMath",
+        "pos": [
+          543.0,
+          433.0
+        ],
+        "values": [
+          3.0,
+          0.0,
+          0.0,
+          0.0,
+          -0.58,
+          -4.21,
+          0.84,
+          3.27
+        ]
+      },
+      {
+        "id": 17,
+        "kind": "AudioLevel",
+        "pos": [
+          -595.0,
+          701.0
+        ],
+        "values": [
+          1.0,
+          0.333,
+          0.333,
+          0.73
+        ]
+      },
+      {
+        "id": 18,
+        "kind": "Math",
+        "pos": [
+          -1279.0,
+          573.0
+        ],
+        "values": [
+          2.0,
+          0.36,
+          0.35
+        ]
+      },
+      {
+        "id": 19,
+        "kind": "Beat",
+        "pos": [
+          -1599.0,
+          673.0
+        ],
+        "values": [
+          4.0,
+          1.0,
+          0.5,
+          0.0
+        ]
+      },
+      {
+        "id": 20,
+        "kind": "Fresnel",
+        "pos": [
+          -888.0,
+          492.0
+        ],
+        "values": [
+          1.13
+        ]
+      },
+      {
+        "id": 22,
+        "kind": "VectorMath",
+        "pos": [
+          549.0,
+          -375.0
+        ],
+        "values": [
+          3.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          1.0,
+          0.17
+        ]
+      },
+      {
+        "id": 23,
+        "kind": "Beat",
+        "pos": [
+          -1091.0,
+          1247.0
+        ],
+        "values": [
+          3.0,
+          1.0,
+          1.02,
+          0.0
+        ]
+      },
+      {
+        "id": 24,
+        "kind": "CombineXyz",
+        "pos": [
+          200.0,
+          600.0
+        ],
+        "values": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      {
+        "id": 25,
+        "kind": "Beat",
+        "pos": [
+          -1093.0,
+          1469.0
+        ],
+        "values": [
+          4.0,
+          1.0,
+          0.79,
+          0.0
+        ]
+      },
+      {
+        "id": 26,
+        "kind": "AudioLevel",
+        "pos": [
+          -588.0,
+          864.0
+        ],
+        "values": [
+          3.0,
+          0.333,
+          0.333,
+          0.0
+        ]
+      },
+      {
+        "id": 27,
+        "kind": "AudioLevel",
+        "pos": [
+          -589.0,
+          1018.0
+        ],
+        "values": [
+          4.0,
+          0.333,
+          0.333,
+          0.0
+        ]
+      },
+      {
+        "id": 29,
+        "kind": "Repeat",
+        "pos": [
+          1226.0,
+          -428.0
+        ],
+        "values": [
+          5.14,
+          6.45,
+          -4.36,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "id": 31,
+        "kind": "Oscillator",
+        "pos": [
+          -916.0,
+          -82.0
+        ],
+        "values": [
+          0.0,
+          0.2,
+          -1.8,
+          -4.0,
+          0.0
+        ]
+      },
+      {
+        "id": 33,
+        "kind": "Time",
+        "pos": [
+          235.0,
+          -92.0
+        ],
+        "values": [
+          0.02,
+          0.0
+        ]
+      },
+      {
+        "id": 34,
+        "kind": "Wiggle",
+        "pos": [
+          195.0,
+          56.0
+        ],
+        "values": [
+          0.001,
+          20.17,
+          0.0,
+          2.0,
+          0.0
+        ]
+      },
+      {
+        "id": 35,
+        "kind": "CombineXyz",
+        "pos": [
+          694.0,
+          -63.0
+        ],
+        "values": [
+          0.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "id": 37,
+        "kind": "Math",
+        "pos": [
+          -311.0,
+          525.0
+        ],
+        "values": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "links": [
+      {
+        "from": 0,
+        "from_out": 0,
+        "to": 2,
+        "input": 0
+      },
+      {
+        "from": 2,
+        "from_out": 0,
+        "to": 1,
+        "input": 0
+      },
+      {
+        "from": 3,
+        "from_out": 0,
+        "to": 4,
+        "input": 0
+      },
+      {
+        "from": 13,
+        "from_out": 0,
+        "to": 7,
+        "input": 0
+      },
+      {
+        "from": 7,
+        "from_out": 0,
+        "to": 15,
+        "input": 0
+      },
+      {
+        "from": 15,
+        "from_out": 0,
+        "to": 16,
+        "input": 1
+      },
+      {
+        "from": 16,
+        "from_out": 0,
+        "to": 8,
+        "input": 5
+      },
+      {
+        "from": 16,
+        "from_out": 0,
+        "to": 8,
+        "input": 4
+      },
+      {
+        "from": 4,
+        "from_out": 0,
+        "to": 22,
+        "input": 1
+      },
+      {
+        "from": 24,
+        "from_out": 0,
+        "to": 16,
+        "input": 2
+      },
+      {
+        "from": 12,
+        "from_out": 1,
+        "to": 13,
+        "input": 2
+      },
+      {
+        "from": 6,
+        "from_out": 0,
+        "to": 13,
+        "input": 1
+      },
+      {
+        "from": 19,
+        "from_out": 0,
+        "to": 18,
+        "input": 1
+      },
+      {
+        "from": 27,
+        "from_out": 0,
+        "to": 15,
+        "input": 1
+      },
+      {
+        "from": 22,
+        "from_out": 0,
+        "to": 29,
+        "input": 0
+      },
+      {
+        "from": 29,
+        "from_out": 0,
+        "to": 5,
+        "input": 0
+      },
+      {
+        "from": 18,
+        "from_out": 0,
+        "to": 20,
+        "input": 0
+      },
+      {
+        "from": 33,
+        "from_out": 0,
+        "to": 22,
+        "input": 3
+      },
+      {
+        "from": 34,
+        "from_out": 0,
+        "to": 35,
+        "input": 0
+      },
+      {
+        "from": 37,
+        "from_out": 0,
+        "to": 7,
+        "input": 2
+      },
+      {
+        "from": 17,
+        "from_out": 0,
+        "to": 37,
+        "input": 2
+      },
+      {
+        "from": 18,
+        "from_out": 0,
+        "to": 37,
+        "input": 1
+      },
+      {
+        "from": 18,
+        "from_out": 0,
+        "to": 2,
+        "input": 5
+      },
+      {
+        "from": 31,
+        "from_out": 0,
+        "to": 2,
+        "input": 1
+      }
+    ],
+    "next_id": 38,
+    "camera_hint": [
+      [
+        4.5,
+        4.0,
+        -6.0
+      ],
+      -0.6435,
+      -0.49
+    ]
+  },
+  "settings": {
+    "iterations": 14,
+    "max_steps": 512,
+    "detail": 1.0,
+    "render_scale": 0.5,
+    "dynamic_resolution": false,
+    "target_fps": 60.0,
+    "vsync": false,
+    "shadows": false,
+    "shadow_steps": 25,
+    "shadow_iterations": 6,
+    "shadow_softness": 8.0,
+    "ao_strength": 2.5,
+    "fog": 0.5,
+    "base_color": [
+      0.35000002,
+      0.45000002,
+      0.75
+    ],
+    "sky_top": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "sky_bottom": [
+      0.020000007,
+      0.02,
+      0.035
+    ],
+    "sky_solid": true,
+    "reflections": false,
+    "reflection_steps": 96,
+    "light_intensity": 0.0,
+    "bloom": {
+      "enabled": true,
+      "intensity": 0.5,
+      "threshold": 1.2,
+      "knee": 0.33,
+      "radius": 0.5
+    },
+    "light_yaw": 0.8,
+    "light_pitch": 0.7,
+    "accumulate": false,
+    "max_samples": 64,
+    "move_speed": 4.229847,
+    "look_sensitivity": 1.0,
+    "playing": false,
+    "time_speed": 1.0
+  },
+  "camera": {
+    "pos": [
+      9.034556,
+      -1.9406059,
+      99.64651
+    ],
+    "yaw": -16.383469,
+    "pitch": 0.6380011,
+    "fov_deg": 60.0
+  },
+  "anim_time": 71.449524,
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration": 10.0,
+    "start": 0.0,
+    "samples": 4,
+    "shutter": 0.35,
+    "format": "Hdr10",
+    "crf": 16,
+    "output": "fractalful_video3",
+    "camera": "Current",
+    "orbit_turns": 1.0,
+    "include_audio": true
+  },
+  "keyframes": [],
+  "audio": {
+    "path": "C:\\Users\\Admin\\Downloads\\harmonics and delays.flac",
+    "offset": 0.0,
+    "volume": 1.0,
+    "muted": false,
+    "bpm": null,
+    "sensitivity": 0.0
+  }
+}

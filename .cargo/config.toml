@@ -1,0 +1,4 @@
+# Link the C runtime statically: the exe then runs without the Visual C++
+# Redistributable (vcruntime140.dll) being installed.
+[target.x86_64-pc-windows-msvc]
+rustflags = ["-C", "target-feature=+crt-static"]
